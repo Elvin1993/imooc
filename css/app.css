@@ -1,0 +1,41 @@
+body,
+div,
+h3,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 12px "微软雅黑";
+    color: #fff;
+    background: #F06060;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#loading {
+    font-size: 16px;
+    text-align: center;
+}
+
+.loading-text {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 60px;
+    left: 0;
+    margin: auto;
+}
+
+.hide {
+	display: none;
+}
