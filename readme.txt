@@ -1,10 +1,1 @@
-¿´¿´ÄãÓÐ¶àÉ«
-É«
-É«e
-É«~d
-d
-
-todo no not to do 
-is a problem
-
-fk
+å…¨æ°‘å¯»æ‰¾ç»¿ç®­ä¾ 
