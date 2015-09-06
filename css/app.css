@@ -1,41 +1,266 @@
 body,
 div,
-h3,
-span {
-    margin: 0;
-    padding: 0;
+span,h3{
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-    font: 12px "微软雅黑";
+    background-color: #F06060;
+    font: 12px/1.5 '微软雅黑';
     color: #fff;
-    background: #F06060;
+}
+
+#loading {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.loading-txt {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    margin: auto;
 }
 
 .page {
     position: absolute;
     top: 0;
-    right: 0;
     left: 0;
+    right: 0;
     bottom: 0;
 }
 
-#loading {
-    font-size: 16px;
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#index {
     text-align: center;
 }
 
-.loading-text {
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 60px;
-    left: 0;
-    margin: auto;
+#index h1 {
+    font-size: 30px;
+    padding: 30px 0;
+    text-shadow: 1px 1px 1px #AB3C3C;
 }
 
-.hide {
-	display: none;
+#help {
+    height: 30px;
+    font-size: 16px;
+    color: #FFA1A1;
+}
+
+#index .btns {
+    position: absolute;
+    bottom: 10px;
+    height: 200px;
+    width: 100%;
+    color: #ddd;
+}
+
+.btn {
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px 20px;
+    /*text-transform: uppercase; 文字大写 , 对中文无意义*/
+    letter-spacing: 1px;
+    font-weight: 700;
+    position: relative;
+    background: #FCAD26;
+    border-radius: 7px;
+    box-shadow: 0 5px #DA9622;
+    font-size: 20px;
+    font-family: '微软雅黑';
+    height: 50px;
+    width: 220px;
+    line-height: 50px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn.btn-new {
+    background: #5cbcf6;
+    box-shadow: 0 5px #49A7DF;
+}
+
+#room header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 16px;
+    color: #FFA1A1;
+}
+
+.lv {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+#room .lv em {
+  font-style: normal;
+}
+
+.time {
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #FD9090;
+    color: #FFCACA;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.btn-pause {
+    margin: 0;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #fff;
+}
+
+#box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: #ddd;
+  border-radius: 10px;
+  padding: 10px;
+}
+#box span {
+  display: block;
+  float: left;
+  cursor: pointer;
+  border: 5px solid #ddd;
+  border-radius: 10px;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+}
+
+.lv1 span {
+  width: 50%;
+  height: 50%;
+}
+
+.lv2 span {
+  width: 50%;
+  height: 50%;
+}
+
+.lv3 span {
+  width: 33.33%;
+  height: 33.33%;
+}
+.lv4 span {
+  width: 25%;
+  height: 25%;
+}
+.lv5 span {
+  width: 20%;
+  height: 20%;
+}
+.lv6 span {
+  width: 16.66%;
+  height: 16.66%;
+}
+
+.lv7 span {
+  width: 14.28%;
+  height: 14.28%;
+}
+.lv8 span {
+  width: 12.5%;
+  height: 12.5%;
+}
+
+.lv9 span {
+  width: 11.11%;
+  height: 11.11%;
+}
+.lv10 span {
+  width: 10%;
+  height: 10%;
+}
+#dialog {
+  background: #A74343;
+}
+
+.pause {
+  width: 100%;
+  height: 270px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.gameover {
+  text-align: center;
+  width: 100%;
+  height: 270px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+margin: auto;
+}
+.pause h3, .gameover h3{
+  color: #FFE2C5;
+  font-size: 40px;
+  line-height: 60px;
+}
+#dialog .btn {
+  margin: 15px auto;
+}
+
+.btn-resume , .btn-restart {
+  width: 105px;
+  float: left;
+}
+
+#dialog .btn-restart {
+  margin-left: 10px;
+}
+
+.btn-wrap {
+  width:220px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.danger {
+  color: red;
 }
