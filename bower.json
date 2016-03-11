@@ -1,0 +1,24 @@
+{
+  "name": "imooc",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "ElvinLong <970099734@qq.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  },
+  "devDependencies": {
+    "jquery": "~2.2.0"
+  }
+}

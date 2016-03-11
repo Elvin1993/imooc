@@ -1,0 +1,45 @@
+extends ../layout
+
+block content
+	.container
+		.row
+			form.form-horizontal(method="post", action="/admin/movie/new")
+				input(type="hidden",name="movie[_id]",value="#{movie._id}")
+				.form-group
+					label.col-sm-2.control-label(for="txtTitle") 电影名称
+					.col-sm-10
+						input#txtTitle.form-control(type="text", name="movie[title]", value="#{movie.title}")
+				.form-group
+					label.col-sm-2.control-label(for="txtDoctor") 导演
+					.col-sm-10
+						input#txtDoctor.form-control(type="text", name="movie[doctor]", value="#{movie.doctor}")
+				.form-group
+					label.col-sm-2.control-label(for="txtLanguage") 语言
+					.col-sm-10
+						input#txtLanguage.form-control(type="text", name="movie[language]", value="#{movie.language}")
+				.form-group
+					label.col-sm-2.control-label(for="txtCountry") 国家
+					.col-sm-10
+						input#txtCountry.form-control(type="text", name="movie[country]", value="#{movie.country}")
+				.form-group
+					label.col-sm-2.control-label(for="txtSummary") 简介
+					.col-sm-10
+						input#txtSummary.form-control(type="text", name="movie[summary]", value="#{movie.summary}")
+				.form-group
+					label.col-sm-2.control-label(for="txtFlash") 地址
+					.col-sm-10
+						input#txtFlash.form-control(type="text", name="movie[flash]", value="#{movie.flash}")
+				.form-group
+					label.col-sm-2.control-label(for="txtPoster") 海报
+					.col-sm-10
+						input#txtPoster.form-control(type="text", name="movie[poster]", value="#{movie.poster}")
+				.form-group
+					label.col-sm-2.control-label(for="txtYear") 年份
+					.col-sm-10
+						input#txtYear.form-control(type="text", name="movie[year]", value="#{movie.year}")
+				.form-group
+					label.col-sm-2.control-label(for="txtKey") Key
+					.col-sm-10
+						keygen#txtKey(name="movie[key]", value="#{movie.year}")
+				.form-group
+					input.btn.btn-primary(type="submit", value="提交")
